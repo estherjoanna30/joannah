@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1026125318157",
+    "project_id": "joannah-8d2f6",
+    "storage_bucket": "joannah-8d2f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026125318157:android:d1525364ad2b6efddbed44",
+        "android_client_info": {
+          "package_name": "com.example.joannah"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_phgTWfSzi9o-_6IsygHS7HWd40kSDno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

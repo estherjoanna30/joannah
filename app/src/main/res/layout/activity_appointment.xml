@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgfe"
+    tools:context=".appointment">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            android:title="Appointment"
+            android:titleTextColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- CalendarView to choose the date -->
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="400dp"
+        android:layout_height="332dp"
+        android:layout_marginTop="52dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+            android:id="@+id/textViewSelectedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time: "
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/calendarView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <!-- Time slots for appointments -->
+
+    <!-- Button to confirm appointment -->
+    <RadioGroup
+        android:id="@+id/radioGroupTimeSlots"
+        android:layout_width="363dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSelectedTime">
+
+        <!-- Time slot 9-11 -->
+
+        <!-- Time slot 11-1 -->
+
+        <RadioButton
+            android:id="@+id/radioButton9to11"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="9:00 AM - 11:00 AM" />
+
+        <!-- Time slot 2-4 -->
+        <RadioButton
+            android:id="@+id/radioButton11to1"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="11:00 AM - 1:00 PM" />
+
+        <RadioButton
+            android:id="@+id/radioButton2to4"
+            android:layout_width="184dp"
+            android:layout_height="48dp"
+            android:text="2:00 PM - 4:00 PM" />
+
+        <!-- Time slot 4-6 -->
+        <RadioButton
+            android:id="@+id/radioButton4to6"
+            android:layout_width="184dp"
+            android:layout_height="48dp"
+            android:text="4:00 PM - 6:00 PM" />
+
+        <!-- Time slot 6-8 -->
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonConfirmAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Confirm Pickup time "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupTimeSlots" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">joannah</string>
+    <string name="start">START</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="signup">signup</string>
+    <string name="USERNAME">USERNAME</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="CONFIRMPASSWORD">CONFIRM PASSWORD</string>
+    <string name="abc">abc</string>
+    <string name="def">def</string>
+    <string name="ghi">ghi</string>
+    <string name="jkl">jkl</string>
+    <string name="mno">mno</string>
+    <string name="pqr">pqr</string>
+    <string name="stu">stu</string>
+    <string name="vwx">vwx</string>
+
+    <string name="select_time_hint">Select Time</string>
+    <string-array name="spinner_options">
+        <item>9.00am - 11.00am</item>
+        <item>11.00am - 1.00pm</item>
+        <item>2.00pm - 4.00pm</item>
+        <item>4.00pm - 6.00pm</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+
+</resources>
